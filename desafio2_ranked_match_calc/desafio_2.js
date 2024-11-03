@@ -1,8 +1,10 @@
 // Função para calcular o nível baseado nas vitórias
 function calcularNivel(win, lose) {
 
+    // Calcula o saldo de vitórias 
     const saldoVitorias = win - lose;
     
+    // Variável para armazenar o rank 
     let rank;
 
     switch (true) {
@@ -35,8 +37,8 @@ function calcularNivel(win, lose) {
 }
 
 // Exemplo de uso
-const win = 75;  
-const lose = 30;
+const win = 85;  
+const lose = 25;
 
 let resultado = calcularNivel(win, lose);
 
